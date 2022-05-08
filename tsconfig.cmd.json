@@ -1,8 +1,9 @@
 {
     "extends": "./tsconfig.json",
-    "module": "ESNext", /* Specify what module code is generated. */
+    "module": "CommonJS", /* Specify what module code is generated. */
+    "target": "ES6",
     "compilerOptions": {
-        "outDir": "./dist/esm", // 生成 esm 输出
+        "outDir": "./dist/cmd", // 生成 esm 输出
         "sourceMap": false,
         "declaration": false,
         "declarationMap": false
