@@ -2,7 +2,7 @@ import './encoding';
 export * from "./struct-buffer";
 export * from "./types";
 export { registerType, typedef, bits, bitFields } from "./class-type";
-export * as CStruct from "./c-struct";
+// export * as CStruct from "./c-struct";
 export { display } from "./display";
 export {
   createDataView,

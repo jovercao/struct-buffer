@@ -1,9 +1,10 @@
 // @ts-nocheck
+const gb = typeof global !== 'undefined' ? global : typeof globalThis !== 'undefined' ? globalThis : window
 
-if (!Reflect.get(globalThis, 'TextEncoder')) {
-  Reflect.set(globalThis, 'TextEncoder', require('util').TextEncoder)
+if (!Reflect.get(gb, 'TextEncoder')) {
+  Reflect.set(gb, 'TextEncoder', require('util').TextEncoder)
 }
 
-if (!Reflect.get(globalThis, 'TextDecoder')) {
-  Reflect.set(globalThis, 'TextDecoder', require('util').TextDecoder)
+if (!Reflect.get(gb, 'TextDecoder')) {
+  Reflect.set(gb, 'TextDecoder', require('util').TextDecoder)
 }

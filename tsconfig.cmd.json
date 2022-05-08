@@ -1,11 +1,10 @@
 {
     "extends": "./tsconfig.json",
-    "module": "CommonJS", /* Specify what module code is generated. */
-    "target": "ES6",
     "compilerOptions": {
+        "module": "CommonJS", /* Specify what module code is generated. */
         "outDir": "./dist/cmd", // 生成 esm 输出
         "sourceMap": false,
-        "declaration": false,
+        "declaration": true,
         "declarationMap": false
     },
 }

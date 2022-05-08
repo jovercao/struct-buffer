@@ -1,10 +1,10 @@
 {
     "extends": "./tsconfig.json",
-    "module": "ESNext", /* Specify what module code is generated. */
     "compilerOptions": {
+        "module": "ES2020", /* Specify what module code is generated. */
         "outDir": "./dist/esm", // 生成 esm 输出
         "sourceMap": false,
-        "declaration": false,
+        "declaration": true,
         "declarationMap": false
     },
 }

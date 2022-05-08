@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "module": "ESNext", /* Specify what module code is generated. */
+    "compilerOptions": {
+        "outDir": "./types/", // 生成 esm 输出
+        "sourceMap": false,
+        "declaration": false,
+        "declarationMap": false
+    },
+}
